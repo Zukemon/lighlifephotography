@@ -1,0 +1,132 @@
+{% extends "layout_a.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block main %}
+    <div id="loader" class="center"></div>
+    <div id="viewer">
+        <div id= projects style="margin-top: 70px;">
+            <!-- <h3>Gallery | Example 1</h3> -->
+            <div class="galleryContainer">
+                
+                <div id='one' class="thumbnails col-sm-2 col-md-2 col-lg-2 top-buffer">
+                    <label class="thumbnailImage" for="c6" onclick="currentSlide(6)">
+                        <img src="/static/images/studio/s6.jpeg" class="gallImg">
+                    </label>
+
+                    <label class="thumbnailImage" for="c5" onclick="currentSlide(5)">
+                        <img src="/static/images/studio/s5.jpeg" class="gallImg">
+                    </label>
+
+                    <label class="thumbnailImage" for="c4" onclick="currentSlide(4)">
+                        <img src="/static/images/studio/s4.jpeg" class="gallImg">
+                    </label>
+
+                    <label class="thumbnailImage" for="c3" onclick="currentSlide(3)">
+                        <img src="/static/images/studio/s3.jpeg" class="gallImg">
+                    </label>
+
+                    <label class="thumbnailImage" for="c2" onclick="currentSlide(2)">
+                        <img src="/static/images/studio/s2.jpeg" class="gallImg">
+                    </label>
+
+                    <label class="thumbnailImage" for="c1" onclick="currentSlide(1)">
+                        <img src="/static/images/studio/s1.jpeg" class="gallImg">
+                    </label>
+                </div>
+                    
+
+                <div id= 'two' class="gallerySL month-picker-fieldset col-sm-9 col-md-9 col-lg-9 top-buffer">
+
+                    <!-- <button type="buton" class="arrz month-picker-nav" onclick="NavBot('prev');">&lt;</button>  -->
+
+                    <input type="radio" name="controls" id="c1" checked>
+                    <img src="/static/images/studio/s1.jpeg" id="i1" class="gallImage">
+
+                    <input type="radio" name="controls" id="c2" checked>
+                    <img src="/static/images/studio/s2.jpeg" id="i2" class="gallImage">
+
+                    <input type="radio" name="controls" id="c3" checked>
+                    <img src="/static/images/studio/s3.jpeg" id="i3" class="gallImage">
+
+                    <input type="radio" name="controls" id="c4" checked>
+                    <img src="/static/images/studio/s4.jpeg" id="i4" class="gallImage">
+
+                    <input type="radio" name="controls" id="c5" checked>
+                    <img src="/static/images/studio/s5.jpeg" id="i5" class="gallImage">
+
+                    <input type="radio" name="controls" id="c6" checked>
+                    <img src="/static/images/studio/s6.jpeg" id="i6" class="gallImage">
+
+                    <!-- <button type="buton" class="arrz month-picker-nav" onclick="NavBot('next');">&gt;</button> -->
+                        
+                </div>
+
+        </div>
+    </div>
+
+
+    </body>
+
+    <script>
+        NavBot = function (direction) {
+            var all = $('.month-picker-fieldset input:radio');
+            var current = $('.month-picker-fieldset input:radio:checked');
+            var index;
+
+            if (direction == 'prev') {
+                index = all.index(current) - 1;       
+            } else if(direction == 'next') {
+                index = all.index(current) + 1;      
+            }
+
+            if(index >= 6) index = 0;
+
+            console.log(index)
+            
+            all.eq(index).click();
+            // if(index >= all.size()) index = 0;
+            return false;
+        };
+
+        resize_objects();
+        $(window).ready(resize_objects);
+        $(window).resize(resize_objects);
+        $(window).click(resize_objects);
+        // object.addEventListener("load", resize_objects);
+
+
+        function resize_objects(){
+        var $a = $('#one').height(), $b = $('#two').height();
+
+        if($a > $b) {
+            //#one is higher than #two
+            $("#one").css("height",$b);
+        }
+        else {
+            //#two is higher than #one
+            $("#one").css("height",$b);
+            }
+        // console.log("ping!")
+        }
+
+        // preload code
+        
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                "body").style.visibility = "hidden";
+                document.querySelector(
+                "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                "#loader").style.display = "none";
+                document.querySelector(
+                "body").style.visibility = "visible";
+            }
+            resize_objects();
+        };
+
+    </script>
+{% endblock %}
