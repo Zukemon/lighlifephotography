@@ -33,7 +33,22 @@
         <script src="/lightlifephotography/static/iconify.min.js"></script>
 
         <title>Light Life Photography</title>
-
+        <script>
+            // preload code                        
+            document.onreadystatechange = function() {
+                if (document.readyState == "complete") {
+                    document.querySelector(
+                    "body").style.visibility = "visible";
+                    document.querySelector(
+                    "#loader").style.visibility = "none";
+                } else {
+                    document.querySelector(
+                    "#loader").style.display = "visible";
+                    document.querySelector(
+                    "body").style.visibility = "hidden";
+                }
+            }
+        </script>
     </head>
 
     <body class="back1">

@@ -98,6 +98,22 @@
               .sidebar a {font-size: 18px;}
               }
           </style>
+          <script>
+            // preload code                        
+            document.onreadystatechange = function() {
+                if (document.readyState == "complete") {
+                    document.querySelector(
+                    "body").style.visibility = "visible";
+                    document.querySelector(
+                    "#loader").style.visibility = "none";
+                } else {
+                    document.querySelector(
+                    "#loader").style.display = "visible";
+                    document.querySelector(
+                    "body").style.visibility = "hidden";
+                }
+            }
+        </script>
     </head>
 
     <body class="back3" style="background-image: url('/lightlifephotography/static/images/contact/contact_img.jpeg');">
@@ -207,6 +223,7 @@
             </div>
             
         </main>
+        
     </body>
     <footer class="text-center text-muted space" style='font-family: trajan-pro;'>
             
@@ -216,5 +233,4 @@
         <!-- Data provided for free by <a href="https://iextrading.com/developer">IEX</a>. View <a href="https://iextrading.com/api-exhibit-a/">IEX’s Terms of Use</a>. -->
     </footer>
         
-
 </html>

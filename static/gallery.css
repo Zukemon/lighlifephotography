@@ -90,18 +90,18 @@ h1{
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
 
 .galleryContainer_c{
-    /* width: 1050px; */
+    width: 95vw;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -512,6 +512,166 @@ h1{
 #c22:checked + #i22{
     opacity: 1;
 }
+
+#c23:checked + #i23{
+    opacity: 1;
+}
+
+#c24:checked + #i24{
+    opacity: 1;
+}
+
+#c25:checked + #i25{
+    opacity: 1;
+}
+
+#c26:checked + #i26{
+    opacity: 1;
+}
+
+#c27:checked + #i27{
+    opacity: 1;
+}
+
+#c28:checked + #i28{
+    opacity: 1;
+}
+
+#c29:checked + #i29{
+    opacity: 1;
+}
+
+#c30:checked + #i30{
+    opacity: 1;
+}
+
+#c31:checked + #i31{
+    opacity: 1;
+}
+
+#c32:checked + #i32{
+    opacity: 1;
+}
+
+#c33:checked + #i33{
+    opacity: 1;
+}
+
+#c34:checked + #i34{
+    opacity: 1;
+}
+
+#c35:checked + #i35{
+    opacity: 1;
+}
+
+#c36:checked + #i36{
+    opacity: 1;
+}
+
+#c37:checked + #i37{
+    opacity: 1;
+}
+
+#c38:checked + #i38{
+    opacity: 1;
+}
+
+#c39:checked + #i39{
+    opacity: 1;
+}
+
+#c40:checked + #i40{
+    opacity: 1;
+}
+
+#c41:checked + #i41{
+    opacity: 1;
+}
+
+#c42:checked + #i42{
+    opacity: 1;
+}
+
+#c43:checked + #i43{
+    opacity: 1;
+}
+
+#c44:checked + #i44{
+    opacity: 1;
+}
+
+#c45:checked + #i45{
+    opacity: 1;
+}
+
+#c46:checked + #i46{
+    opacity: 1;
+}
+
+#c47:checked + #i47{
+    opacity: 1;
+}
+
+#c48:checked + #i48{
+    opacity: 1;
+}
+
+#c49:checked + #i49{
+    opacity: 1;
+}
+
+#c50:checked + #i50{
+    opacity: 1;
+}
+
+#c51:checked + #i51{
+    opacity: 1;
+}
+
+#c52:checked + #i52{
+    opacity: 1;
+}
+
+#c53:checked + #i53{
+    opacity: 1;
+}
+
+#c54:checked + #i54{
+    opacity: 1;
+}
+
+#c55:checked + #i55{
+    opacity: 1;
+}
+
+#c56:checked + #i56{
+    opacity: 1;
+}
+
+#c57:checked + #i57{
+    opacity: 1;
+}
+
+#c58:checked + #i58{
+    opacity: 1;
+}
+
+#c59:checked + #i59{
+    opacity: 1;
+}
+
+#c60:checked + #i60{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
 /* Respnonsive */
 @media(max-width: 720px)
 {
