@@ -313,6 +313,13 @@ main img
 	/* background-color: gray; */
 }
 
+/* .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+} */
+
 
 .space {
 	margin-bottom: 190px;
@@ -599,7 +606,8 @@ main img
 		padding-top: 0px;
 		bottom: 5px;
 		height: 90vh;
-		align-items: center;	
+		align-items: center;
+		left: -49px;	
 	}
 	.navbar {
 		padding: 0.2rem 0.25rem;
